@@ -64,7 +64,7 @@ client.on('message', message => {
       case 'ls':
         type = args.shift();
         if (['rob', 'heist'].includes(type)) {
-          let list = 'Tip: The first (number 0) reply is always used if no one was mentioned in the rob command.\n';
+          let list = '*Tip: The first (number 0) reply is always used if no one was mentioned in the rob command.*\n';
           config.replies[type].forEach((reply, index) => {
             list += `\n\`${index}:\` "${reply}"`;
           })
@@ -135,7 +135,8 @@ client.on('message', message => {
 
 .on('ready', () => {
   console.log('ready!');
-  client.user.setActivity('lol');
+  const guildCount = client.guilds.cache.size;
+  client.user.setActivity(`for fr help in ${guildCount} guilds`, {type: 'WATCHING'});
 });
 
 client.login(
