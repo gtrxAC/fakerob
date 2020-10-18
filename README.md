@@ -1,4 +1,4 @@
-# fakerob - Fake robbing/heisting messages for Dank Memer
+# fakerob - fake "pls rob" replies
 This bot uses webhooks to look like Dank Memer (or any bot of your choice) and sends fake rob replies to troll pirates who come to your rob-disabled server.
 
 ## Setting up

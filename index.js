@@ -43,11 +43,10 @@ client.on('message', message => {
     const args = message.content.slice(3).split(' ');
     const cmdName = args.shift();
     switch (cmdName) {
-      // Sends the contents of the help file.
+      // Sends the readme link.
       case 'help':
       case '?':
-        data = fs.readFileSync('help.txt').toString();
-        message.channel.send(data);
+        message.reply('https://github.com/gtrxAC/fakerob/blob/master/README.md');
         break;
   
       // Resets the configuration back to the defaults.
@@ -122,7 +121,7 @@ client.on('message', message => {
   // Rob message handler.
   const [prefix, command, target] = message.content.split(' ');
   if (prefix != 'pls') return;
-  
+
   // If we get a rob message, send a rob reply.
   if (['steal', 'rob', 'ripoff'].includes(command)) {
     sendReply(message, target, config.replies.rob);
