@@ -1,0 +1,25 @@
+{
+	"name": "Dank Memer",
+	"replies": {
+		"rob": [
+			"try running the command again, but this time actually mention someone to steal from",
+			"You need at least 500 coins to try and rob someone.",
+			"The victim doesn't have at least 500 coins, not worth it man",
+			"This user has already been stolen from within the last 2 minutes, give it a rest",
+			"Hey they're in passive mode. Leave the peace loving hippy alone!",
+			"hey stupid, seems pretty dumb to steal from urself",
+			"You are not allowed to steal from bots, back off my kind",
+			"You stole BASICALLY EVERYTHING LMFAO :money_mouth:\nYour payout was **2,147,483,647** coins.",
+			"You stole a TINY portion!\nYour payout was **2** coins.",
+			"You gave $target **20,000** coins after a 0% tax rate, now you have 0 and they've got 20,000",
+			"You were caught **HAHAHA**\nYou paid the person you stole from **500** coins."
+		],
+		"heist": [
+			"how are we gonna rob nobody ya dumb dumb",
+			"Hey they're in passive mode. Leave the peace loving hippy alone!",
+			"Why would you heist against yourself that's just literally stupid",
+			"Stop trying to rob poor bots, stupid human",
+			"**$user** is starting a bank robbery. They're trying to break into **$target**'s bank!\nJoin them by typing `JOIN HEIST` in the next 60 seconds!"
+		]
+	}
+}
