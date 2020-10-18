@@ -10,26 +10,26 @@ This bot uses webhooks to look like Dank Memer (or any bot of your choice) and s
 6. If your Dank Memer channel(s) have multiple webhooks, you can choose one to use with the `fr setname` command.
 
 ## Commands
-`fr help` / `fr ?`
-Shows this message.
+* `fr help` / `fr ?`
+* Shows this message.
 
-`fr reset`
-Restores all settings back to the defaults.
+* `fr reset`
+* Restores all settings back to the defaults.
 
-`fr ls rob` / `fr ls heist`
-Shows a list of all rob/heist replies.
+* `fr ls rob` / `fr ls heist`
+* Shows a list of all rob/heist replies.
 
-`fr rm rob (#)` / `fr rm heist (#)`
-Removes a rob/heist reply. The (#) can be found by doing `fr ls rob` or `fr ls heist`.
+* `fr rm rob (#)` / `fr rm heist (#)`
+* Removes a rob/heist reply. The (#) can be found by doing `fr ls rob` or `fr ls heist`.
 
-`fr add rob (msg)` / `fr add heist (msg)`
-Adds a new rob/heist reply. In the message, "$user" is replaced with the robber's username and "$target" with the victim's username.
+* `fr add rob (msg)` / `fr add heist (msg)`
+* Adds a new rob/heist reply. In the message, "$user" is replaced with the robber's username and "$target" with the victim's username.
 
-`fr setname (webhook's name)`
-If the Dank Memer channel has multiple webhooks, this can be used to specify which webhook is used.
+* `fr setname (webhook's name)`
+* If the Dank Memer channel has multiple webhooks, this can be used to specify which webhook is used.
 
-`fr invite`
-Add the bot to your server.
+* `fr invite`
+* Add the bot to your server.
 
 ## Self-hosting
 1. Install the dependencies. `npm i discord.js enmap better-sqlite-pool`
