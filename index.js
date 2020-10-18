@@ -111,6 +111,10 @@ client.on('message', message => {
           message.reply(`specify a name to change to, the current name is "${config.name}".`);
         }
         break;
+
+      case 'invite':
+        message.reply(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=536873984&scope=bot`);
+        break;
     }
     return;
   }
@@ -118,8 +122,6 @@ client.on('message', message => {
   // Rob message handler.
   const [prefix, command, target] = message.content.split(' ');
   if (prefix != 'pls') return;
-
-
   
   // If we get a rob message, send a rob reply.
   if (['steal', 'rob', 'ripoff'].includes(command)) {
@@ -138,5 +140,5 @@ client.on('message', message => {
 });
 
 client.login(
-  fs.readFileSync('token').toString()
+  fs.readFileSync('token.txt').toString()
 );

@@ -26,4 +26,7 @@ Adds a new rob/heist reply. In the message, "$user" is replaced with the robber'
 
 `fr setname (webhook's name)`
 If the Dank Memer channel has multiple webhooks, this can be used to specify which webhook is used.
+
+`fr invite`
+Add the bot to your server.
 ```
