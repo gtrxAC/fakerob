@@ -22,7 +22,7 @@ sendReply = async (message, target, replies) => {
     // Otherwise send a random reply.
     target = message.mentions.users.first()
     || message.client.users.cache.get(target)
-    || message.client.users.cache.find(u => u.tag.toLowerCase().startsWith(target.toLowerCase()))
+    || message.client.users.cache.find(u => u.tag.toLowerCase().startsWith(target))
     || target;
 
     message = replies[Math.floor(Math.random() * replies.length)]
@@ -119,7 +119,7 @@ client.on('message', message => {
   }
 
   // Rob message handler.
-  const [prefix, command, target] = message.content.split(' ');
+  const [prefix, command, target] = message.content.toLowerCase().split(' ');
   if (prefix != 'pls') return;
 
   // If we get a rob message, send a rob reply.
