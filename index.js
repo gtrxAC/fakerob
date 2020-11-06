@@ -139,6 +139,4 @@ client.on('message', message => {
   client.user.setActivity(`for fr help in ${guildCount} guilds`, {type: 'WATCHING'});
 });
 
-client.login(
-  fs.readFileSync('token.txt').toString()
-);
+client.login(require('./token.json'));

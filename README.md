@@ -33,5 +33,5 @@ This bot uses webhooks to look like Dank Memer (or any bot of your choice) and s
 
 ## Self-hosting
 1. Install the dependencies. `npm i discord.js enmap better-sqlite-pool`
-2. Create a token.txt file and paste your bot token there. [Get a token here](https://discord.com/developers)
+2. Create a token.json file and paste your bot token there, surrounded by quotes. [Get a token here](https://discord.com/developers)
 3. Start the bot. `node .`
